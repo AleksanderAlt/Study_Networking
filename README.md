@@ -7,5 +7,5 @@ To run a Linux virtual machine (VM) on top of the regular operating system I ins
 - Vagrant: is a tool for building and managing VM environments in a single workflow.
 
 If you log out of the Linux instance or close the terminal, the next time you want to use it you need to run:
--cd networking
--vagrant ssh
+- cd networking
+- vagrant ssh
