@@ -39,4 +39,4 @@ Can't listen to the same port, which is already in use
 
 ## DNS
 
-[DNS record types] (https://en.wikipedia.org/wiki/List_of_DNS_record_types)
+[DNS record types](https://en.wikipedia.org/wiki/List_of_DNS_record_types)
