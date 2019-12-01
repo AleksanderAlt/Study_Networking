@@ -27,7 +27,7 @@ If you log out of the Linux instance or close the terminal, the next time you wa
 - nc localhost port_nr - receives the port referred to
 - ^D - nc disconnects from port
 - ^C - stops the request
-- > example.txt - saves the results to the file example.txt
+- '> example.txt - saves the results to the file example.txt
 - host host_name - gets hosts alias and IP-adresses
 - dig host_name - gets hosts alias, CNAME, IP-adresses, which server and when answered and more
 
