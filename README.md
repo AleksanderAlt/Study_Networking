@@ -48,7 +48,7 @@ To register a new domain in the DNS with [Google](domains.google.com)
 www.delfi.ee.
 From right to left:
 - . - referres to root nameserver
-ee. - asks from one root nameserver: tell me .ee domain nameservers: nslookup -q=ns .ee IP_adress
+ee. - asks from one root nameserver: tell me .ee domain nameservers: `nslookup -q=ns .ee IP_adress`
 
 ## IP aadressid
 
