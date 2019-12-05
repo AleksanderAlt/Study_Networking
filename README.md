@@ -23,16 +23,16 @@ If you log out of the Linux instance or close the terminal, the next time you wa
 
 ## Käsud
 
-- ´ping -c 3 host_name´ - sends a signal to host and recieves it (-c 3 means that 3 pings will be sent)
-- printf - prints a request (for input using |)
-- netcat - (nc) is a computer networking utility for reading from and writing to network connections
-- nc -l port_nr - nc listens to port referred to
-- nc localhost port_nr - receives the port referred to
-- ^D - nc disconnects from port
-- ^C - stops the request
-- '> example.txt - saves the results to the file example.txt
-- host host_name - gets hosts alias and IP-adresses
-- dig host_name - gets hosts alias, CNAME, IP-adresses, which server and when answered and more
+- `ping -c 3 host_name` - sends a signal to host and recieves it (-c 3 means that 3 pings will be sent)
+- `printf` - prints a request (for input using |)
+- `netcat` - (nc) is a computer networking utility for reading from and writing to network connections
+- `nc -l port_nr` - nc listens to port referred to
+- `nc localhost port_nr` - receives the port referred to
+- `^D` - nc disconnects from port
+- `^C` - stops the request
+- `> example.txt` - saves the results to the file example.txt
+- `host host_name` - gets hosts alias and IP-adresses
+- `dig host_name` - gets hosts alias, CNAME, IP-adresses, which server and when answered and more
 
 ## Pordid
 
