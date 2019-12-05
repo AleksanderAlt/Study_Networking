@@ -17,7 +17,7 @@ If you log out of the Linux instance or close the terminal, the next time you wa
 - Endpoints - two machines or programs communicating over the connection
 - DNS (Domain Name System) - the Internet's system for converting alphabetic names into numeric IP addresses
 - Resolver - the DNS client code built into your OS
-- TTL - time to live in cache server
+- ttl - time to live in cache server
 - C-NAME - used to specify that a domain name is an alias for another domain
 - Search Domain - a setting in the resolver configuration that makes the resolver look up names inside a domain
 
@@ -45,8 +45,13 @@ Can't listen to the same port, which is already in use
 [DNS record types](https://en.wikipedia.org/wiki/List_of_DNS_record_types)
 To register a new domain in the DNS with [Google](domains.google.com)
 
+www.delfi.ee.
+From right to left:
+- . - referres to root nameserver
+ee. - asks from one root nameserver: tell me .ee domain nameservers: nslookup -q=ns .ee IP_adress
+
 ## IP aadressid
 
 IP adress types:
-- IPv4 separated by dots .
+- IPv4 separated by dots . + NAT
 - IPv6 separated by colon :
