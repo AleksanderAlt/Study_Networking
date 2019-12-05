@@ -1,4 +1,4 @@
-# Study_Networking
+# Studymap for Networking
 
 ## Vajalik tarkvara
 
@@ -23,7 +23,7 @@ If you log out of the Linux instance or close the terminal, the next time you wa
 
 ## Käsud
 
-- ping -c 3 host_name - sends a signal to host and recieves it (-c 3 means that 3 pings will be sent)
+- ´ping -c 3 host_name´ - sends a signal to host and recieves it (-c 3 means that 3 pings will be sent)
 - printf - prints a request (for input using |)
 - netcat - (nc) is a computer networking utility for reading from and writing to network connections
 - nc -l port_nr - nc listens to port referred to
