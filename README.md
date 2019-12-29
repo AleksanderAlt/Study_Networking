@@ -21,8 +21,9 @@ If you log out of the Linux instance or close the terminal, the next time you wa
 - ttl - time to live in cache server
 - C-NAME - used to specify that a domain name is an alias for another domain
 - Search Domain - a setting in the resolver configuration that makes the resolver look up names inside a domain
-- IP Network Block - or IP range, a continuous segment of Internet Protocol addresses assigned to an organization or country
+- IP Network Block (IP range) - continuous segment of Internet Protocol addresses assigned to an organization or country
 - Router - a networking device that forwards data packets between computer networks and perform the traffic directing functions on the Internet
+- Network address translation (NAT) - is a method of remapping one IP address space into another by modifying network address information in the IP header of packets while they are in transit across a traffic routing device.
 
 ## Käsud
 
@@ -56,5 +57,10 @@ ee. - asks from one root nameserver: tell me .ee domain nameservers: `nslookup -
 ## IP aadressid
 
 IP adress types:
-- IPv4 separated by dots . + NAT
-- IPv6 separated by colon :
+- IPv4: 
+    -separated by dots . 
+    -32-bit 
+    -4 octet
+    -used with NAT
+- IPv6:
+    -separated by colon :
