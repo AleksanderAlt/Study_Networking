@@ -58,9 +58,9 @@ ee. - asks from one root nameserver: tell me .ee domain nameservers: `nslookup -
 
 IP adress types:
 - IPv4: 
-    -separated by dots . 
-    -32-bit 
-    -4 octet
-    -used with NAT
+    - separated by dots . 
+    - 32-bit 
+    - 4 octet
+    - used with NAT
 - IPv6:
-    -separated by colon :
+    - separated by colon :
