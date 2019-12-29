@@ -8,6 +8,7 @@ To run a Linux virtual machine (VM) on top of the regular operating system I ins
 
 If you log out of the Linux instance or close the terminal, the next time you want to use it you need to run:
 - cd networking
+- vagrant up
 - vagrant ssh
 
 ## Mõisted
@@ -20,6 +21,8 @@ If you log out of the Linux instance or close the terminal, the next time you wa
 - ttl - time to live in cache server
 - C-NAME - used to specify that a domain name is an alias for another domain
 - Search Domain - a setting in the resolver configuration that makes the resolver look up names inside a domain
+- IP Network Block - or IP range, a continuous segment of Internet Protocol addresses assigned to an organization or country
+- Router - a networking device that forwards data packets between computer networks and perform the traffic directing functions on the Internet
 
 ## Käsud
 
