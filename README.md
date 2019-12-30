@@ -109,3 +109,5 @@ The original TCP packet format has six flags. Two more optional flags have since
     - ACK (acknowledge) [.] — This packet acknowledges that its sender has received data from the other endpoint. Almost every packet except the first SYN will have the ACK flag set.
     - URG (urgent) [U] — This packet contains data that needs to be delivered to the application out-of-order. Not used in HTTP or most other current applications.
 - Three-way handshake - `Flags` `[S]` --> `[S.]` --> `[.]` --> ... --> `[F.]` --> `[.]`
+- Packet loss - occurs when one or more packets of data travelling across a computer network fail to reach their destination. Packet loss in a TCP connection is also used to avoid congestion and thus produces an intentionally reduced throughput for the connection.
+- TCP session timeout - by default 15 minutes and for the UDP connection 30 seconds.
