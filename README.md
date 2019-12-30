@@ -80,6 +80,7 @@ IP adress types:
 - HTTP (HyperText Transfer Protocol) - underlying protocol used by the World Wide Web which defines how messages are formatted and transmitted, and what actions Web servers and browsers should take in response to various commands
     - web applications send requests about resources and get responses
 - TCP session - lets two programs send streams of bites back and forward over the network
+
 | What TCP Does | How TCP Does It |
 | --- | --- |
 | communicate between two hosts | IP Layer (addresses + routing) |
@@ -87,6 +88,7 @@ IP adress types:
 | in-order delivery | sequence numbers |
 | lossless delivery | acknowledgment + retransmission |
 | keeping connections distinct | random initial sequence numbers |
+
 - IP (Internet Protocol) - method or protocol by which data is sent from one computer to another on the Internet. Each computer (known as a host) on the Internet has at least one IP address that uniquely identifies it from all other computers on the Internet
 - Hardware
 
