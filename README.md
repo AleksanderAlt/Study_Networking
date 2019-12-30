@@ -26,6 +26,7 @@ If you log out of the Linux instance or close the terminal, the next time you wa
 - Router - a networking device that forwards data packets between computer networks and perform the traffic directing functions on the Internet
 - Network address translation (NAT) - is a method of remapping one IP address space into another by modifying network address information in the IP header of packets while they are in transit across a traffic routing device
 - Default gateway - the node in a computer network using the internet protocol suite that serves as the forwarding host (router) to other networks when no other route specification matches the destination IP address of a packet
+Tcpdump - packet analyzer that allows the user to display TCP/IP and other packets being transmitted or received over a network to which the computer is attached
 
 ## Käsud Linuxis
 
@@ -41,6 +42,7 @@ If you log out of the Linux instance or close the terminal, the next time you wa
 - `dig host_name` - gets hosts alias, CNAME, IP-adresses, which server and when answered and more
 - `ip addr show` - shows what interfaces (ethernet: eth0, wifi: wlan0, loopback: lo) your machine has
 - `ip route show default` - finds default gateway
+- `sudo tcpdump -n host host_name` - allows the user to catch the traffic (coming from, going to, length) between a network to which the computer is attached, to exit ctr+C
 
 ## Pordid
 
@@ -77,6 +79,12 @@ IP adress types:
 
 - HTTP (HyperText Transfer Protocol) - underlying protocol used by the World Wide Web which defines how messages are formatted and transmitted, and what actions Web servers and browsers should take in response to various commands
     - web applications send requests about resources and get responses
+| What TCP Does | How TCP Does It |
+| communicate between two hosts | IP Layer (addresses + routing) |
+| multiple applications per host | port numbers |
+| in-order delivery | sequence numbers |
+| lossless delivery | acknowledgment + retransmission |
+| keeping connections distinct | random initial sequence numbers |
 - TCP session - lets two programs send streams of bites back and forward over the network
 - IP (Internet Protocol) - method or protocol by which data is sent from one computer to another on the Internet. Each computer (known as a host) on the Internet has at least one IP address that uniquely identifies it from all other computers on the Internet
 - Hardware
