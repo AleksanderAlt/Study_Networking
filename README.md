@@ -79,7 +79,11 @@ IP adress types:
     - web applications send requests about resources and get responses
 - TCP session - lets two programs send streams of bites back and forward over the network
 - IP (Internet Protocol) - method or protocol by which data is sent from one computer to another on the Internet. Each computer (known as a host) on the Internet has at least one IP address that uniquely identifies it from all other computers on the Internet
+- Hardware
 
 | Protocol | Concepts | Where the code is | Failures |
 | --- | ---| --- | --- |
 | HTTP | resources, URLs, verbs, cookies | Flask, Apache, browsers | error codes, slow responses |
+| TCP | ports, sessions, stream sockets | OS kernel, system libraries | broken connections, timeouts |
+| IP | IP addresses, packets | OS kernel, routers | various |
+| Wifi | access points, WPA passwords | device drivers | network unavailable |
