@@ -77,9 +77,27 @@ IP adress types:
 
 ## Protocol stack
 
-- HTTP (HyperText Transfer Protocol) - underlying protocol used by the World Wide Web which defines how messages are formatted and transmitted, and what actions Web servers and browsers should take in response to various commands
+1. HTTP (HyperText Transfer Protocol) - underlying protocol used by the World Wide Web which defines how messages are formatted and transmitted, and what actions Web servers and browsers should take in response to various commands
     - web applications send requests about resources and get responses
-- TCP session - lets two programs send streams of bites back and forward over the network
+2. TCP session - lets two programs send streams of bites back and forward over the network
+3. IP (Internet Protocol) - method or protocol by which data is sent from one computer to another on the Internet. Each computer (known as a host) on the Internet has at least one IP address that uniquely identifies it from all other computers on the Internet
+4. Hardware
+
+| Protocol | Concepts | Where the code is | Failures |
+| --- | ---| --- | --- |
+| HTTP | resources, URLs, verbs, cookies | Flask, Apache, browsers | error codes, slow responses |
+| TCP | ports, sessions, stream sockets | OS kernel, system libraries | broken connections, timeouts |
+| IP | IP addresses, packets | OS kernel, routers | various |
+| Wifi | access points, WPA passwords | device drivers | network unavailable |
+
+- TCP flag - is a Boolean value (true or false) that is stored in memory as a single bit. If a flag bit is 1, we say the flag is set. If the flag bit is 0, the flag is cleared (or unset). Usually, flags come in groups, each of which can be set or cleared.
+The original TCP packet format has six flags. Two more optional flags have since been standardized, but they are much less important to the basic functioning of TCP. For each packet, `tcpdump` will show you which flags are set on that packet.
+    - SYN (synchronize) [S] — This packet is opening a new TCP session and contains a new initial sequence number.
+    - FIN (finish) [F] — This packet is used to close a TCP session normally. The sender is saying that they are finished sending, but they can still receive data from the other endpoint.
+    - PSH (push) [P] — This packet is the end of a chunk of application data, such as an HTTP request.
+    - RST (reset) [R] — This packet is a TCP error message; the sender has a problem and wants to reset (abandon) the session.
+    - ACK (acknowledge) [.] — This packet acknowledges that its sender has received data from the other endpoint. Almost every packet except the first SYN will have the ACK flag set.
+    - URG (urgent) [U] — This packet contains data that needs to be delivered to the application out-of-order. Not used in HTTP or most other current applications.
 
 | What TCP Does | How TCP Does It |
 | --- | --- |
@@ -89,12 +107,4 @@ IP adress types:
 | lossless delivery | acknowledgment + retransmission |
 | keeping connections distinct | random initial sequence numbers |
 
-- IP (Internet Protocol) - method or protocol by which data is sent from one computer to another on the Internet. Each computer (known as a host) on the Internet has at least one IP address that uniquely identifies it from all other computers on the Internet
-- Hardware
 
-| Protocol | Concepts | Where the code is | Failures |
-| --- | ---| --- | --- |
-| HTTP | resources, URLs, verbs, cookies | Flask, Apache, browsers | error codes, slow responses |
-| TCP | ports, sessions, stream sockets | OS kernel, system libraries | broken connections, timeouts |
-| IP | IP addresses, packets | OS kernel, routers | various |
-| Wifi | access points, WPA passwords | device drivers | network unavailable |
