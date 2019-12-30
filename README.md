@@ -108,4 +108,4 @@ The original TCP packet format has six flags. Two more optional flags have since
     - RST (reset) [R] — This packet is a TCP error message; the sender has a problem and wants to reset (abandon) the session.
     - ACK (acknowledge) [.] — This packet acknowledges that its sender has received data from the other endpoint. Almost every packet except the first SYN will have the ACK flag set.
     - URG (urgent) [U] — This packet contains data that needs to be delivered to the application out-of-order. Not used in HTTP or most other current applications.
-
+- Three-way handshake - `Flags` `[S]` --> `[S.]` --> `[.]` --> ... --> `[F.]` --> `[.]`
