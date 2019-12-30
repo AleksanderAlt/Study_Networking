@@ -16,6 +16,7 @@ If you log out of the Linux instance or close the terminal, the next time you wa
 - Ethernet - a system for connecting a number of computer systems to form a local area network, with protocols to control the passing of information and to avoid simultaneous transmission by two or more systems
 - ISP - Internet Service Provider
 - Host - a machine on the internet that might host services
+- Ping time (milliseconds) - round trip time for the packet to reach the host and for the response to return to the sender
 - Endpoints - two machines or programs communicating over the connection
 - DNS (Domain Name System) - the Internet's system for converting alphabetic names into numeric IP addresses
 - Resolver - the DNS client code built into your OS
@@ -26,7 +27,11 @@ If you log out of the Linux instance or close the terminal, the next time you wa
 - Router - a networking device that forwards data packets between computer networks and perform the traffic directing functions on the Internet
 - Network address translation (NAT) - is a method of remapping one IP address space into another by modifying network address information in the IP header of packets while they are in transit across a traffic routing device
 - Default gateway - the node in a computer network using the internet protocol suite that serves as the forwarding host (router) to other networks when no other route specification matches the destination IP address of a packet
-Tcpdump - packet analyzer that allows the user to display TCP/IP and other packets being transmitted or received over a network to which the computer is attached
+- Tcpdump - packet analyzer that allows the user to display TCP/IP and other packets being transmitted or received over a network to which the computer is attached
+- Network bandwidth (bits/second) - capacity of a wired or wireless network communications link to transmit the maximum amount of data from one point to another over a computer network or internet connection in a given amount of time (usually one second). Synonymous with capacity, bandwidth describes the data transfer rate
+- Network latency (milliseconds) - time it takes for data or a request to go from the source to the destination. The closer your latency is to zero, the better
+- Middleboxes — devices that inspect, modify, or filter network traffic. Ex Firewall, intrusion detection systems and load balancers. Can also block apps
+- Web proxy - works at the HTTP level, taking queries from browsers and sending them out to web servers. Many organizations use web proxies for caching. From the standpoint of a web developer, traffic from a busy proxy looks much the same as traffic from a busy NAT: queries for many users, on many actual computers, are funneled through a single public IP address.
 
 ## Käsud Linuxis
 
@@ -43,6 +48,7 @@ Tcpdump - packet analyzer that allows the user to display TCP/IP and other packe
 - `ip addr show` - shows what interfaces (ethernet: eth0, wifi: wlan0, loopback: lo) your machine has
 - `ip route show default` - finds default gateway
 - `sudo tcpdump -n host host_name` - allows the user to catch the traffic (coming from, going to, length) between a network to which the computer is attached, to exit ctr+C
+- `traceroute host_name` - lists the hops between your Linux host and some other host (by sending packets with increasing TTLs until first one reaches its destination)
 
 ## Pordid
 
@@ -111,3 +117,4 @@ The original TCP packet format has six flags. Two more optional flags have since
 - Three-way handshake - `Flags` `[S]` --> `[S.]` --> `[.]` --> ... --> `[F.]` --> `[.]`
 - Packet loss - occurs when one or more packets of data travelling across a computer network fail to reach their destination. Packet loss in a TCP connection is also used to avoid congestion and thus produces an intentionally reduced throughput for the connection.
 - TCP session timeout - by default 15 minutes and for the UDP connection 30 seconds.
+- TCP congestion - when packets are dropped TCP sends them more slowly
