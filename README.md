@@ -1,4 +1,4 @@
-# Studymap for Networking
+# Studymap for Networking - Aleksander Altmäe
 
 ## Vajalik tarkvara
 
