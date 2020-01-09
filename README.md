@@ -25,6 +25,13 @@ If you log out of the Linux instance or close the terminal, the next time you wa
 - Search Domain - a setting in the resolver configuration that makes the resolver look up names inside a domain
 - IP Network Block (IP range) - continuous segment of Internet Protocol addresses assigned to an organization or country
 - Router - a networking device that forwards data packets between computer networks and perform the traffic directing functions on the Internet
+- Switch - a networking hardware that connects devices on a computer network by using packet switching to receive and forward data to the destination device
+- WiFi access point - a networking hardware device that allows other Wi-Fi devices to connect to a wired network
+- Telnet - a network protocol that provides a command-line interface to communicate with a device. Telnet is used most often for remote management but also sometimes for the initial setup for some devices, especially network hardware such as switches and access points
+- Internet Message Access Protocol (IMAP) - an Internet standard protocol used by email clients to retrieve email messages from a mail server over a TCP/IP connection
+- Post Office Protocol 3 (POP3) - a client/server protocol in which e-mail is received and held for you by your Internet server, most recent version of a standard protocol
+- Simple Mail Transfer Protocol (SMTP) - a communication protocol for electronic mail transmission
+- Simple Network Management Protocol (SNMP) - an Internet Standard protocol for collecting and organizing information about managed devices on IP networks and for modifying that information to change device behavior
 - Network address translation (NAT) - is a method of remapping one IP address space into another by modifying network address information in the IP header of packets while they are in transit across a traffic routing device
 - Default gateway - the node in a computer network using the internet protocol suite that serves as the forwarding host (router) to other networks when no other route specification matches the destination IP address of a packet
 - Tcpdump - packet analyzer that allows the user to display TCP/IP and other packets being transmitted or received over a network to which the computer is attached
