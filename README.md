@@ -40,6 +40,7 @@ If you log out of the Linux instance or close the terminal, the next time you wa
 - Middleboxes — devices that inspect, modify, or filter network traffic. Ex Firewall, intrusion detection systems and load balancers. Can also block apps
 - Web proxy - works at the HTTP level, taking queries from browsers and sending them out to web servers. Many organizations use web proxies for caching. From the standpoint of a web developer, traffic from a busy proxy looks much the same as traffic from a busy NAT: queries for many users, on many actual computers, are funneled through a single public IP address
 - Hypertext Transfer Protocol Secure (HTTPS) - an extension of the Hypertext Transfer Protocol (HTTP). It is used for secure communication over a computer network, and is widely used on the Internet
+- Network Time Protocol (NTP) - a networking protocol for clock synchronization between computer systems over packet-switched, variable-latency data networks. In operation before 1985, NTP is one of the oldest Internet protocols in current use.
 
 ## Käsud Linuxis
 
